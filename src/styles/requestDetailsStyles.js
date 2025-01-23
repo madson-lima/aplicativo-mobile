@@ -1,0 +1,92 @@
+import { StyleSheet } from 'react-native';
+
+const requestDetailsStyles = (colors) =>
+  StyleSheet.create({
+    container: {
+      flexGrow: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      paddingVertical: 20,
+      backgroundColor: colors.background,
+    },
+    card: {
+      width: '90%',
+      backgroundColor: colors.cardBackground || '#fff',
+      borderRadius: 15,
+      padding: 20,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 3 },
+      shadowOpacity: 0.1,
+      shadowRadius: 5,
+      elevation: 5,
+      marginBottom: 20,
+    },
+    title: {
+      fontSize: 22,
+      fontWeight: 'bold',
+      color: colors.text,
+      textAlign: 'center',
+      marginBottom: 15,
+    },
+    requestStatus: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      color: colors.primary || '#007bff',
+      textAlign: 'center',
+      marginBottom: 20,
+    },
+    fieldContainer: {
+      marginBottom: 15,
+    },
+    label: {
+      fontSize: 14,
+      fontWeight: '600',
+      color: colors.text,
+      marginBottom: 5,
+    },
+    input: {
+      width: '100%',
+      backgroundColor: colors.inputBackground || '#f1f1f1',
+      borderRadius: 10,
+      paddingVertical: 10,
+      paddingHorizontal: 15,
+      fontSize: 16,
+      color: colors.text,
+      borderWidth: 1,
+      borderColor: colors.border || '#ddd',
+    },
+    textArea: {
+      width: '100%',
+      backgroundColor: colors.inputBackground || '#f1f1f1',
+      borderRadius: 10,
+      paddingVertical: 10,
+      paddingHorizontal: 15,
+      fontSize: 16,
+      color: colors.text,
+      borderWidth: 1,
+      borderColor: colors.border || '#ddd',
+      textAlignVertical: 'top',
+    },
+    backButton: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: colors.buttonBackground || '#007bff',
+      borderRadius: 25,
+      paddingVertical: 12,
+      paddingHorizontal: 20,
+      marginTop: 20,
+      shadowColor: '#000',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.2,
+      shadowRadius: 5,
+      elevation: 8,
+    },
+    backButtonText: {
+      color: colors.buttonText || '#fff',
+      fontSize: 16,
+      fontWeight: 'bold',
+      marginLeft: 10,
+    },
+  });
+
+export default requestDetailsStyles;
